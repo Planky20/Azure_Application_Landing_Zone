@@ -10,3 +10,8 @@ module "network" {
   network_security_group_details = local.network_security_group_details
   depends_on                     = [module.resource-groups]
 }
+
+module "logging" {
+  source                   = "./modules/monitoring/logging"
+  log_analytics_workspaces = var.log_analytics_workspaces
+}

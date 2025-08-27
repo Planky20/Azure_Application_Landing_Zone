@@ -62,3 +62,14 @@ environment = {
     }
   }
 }
+
+log_analytics_workspaces = {
+  security-log-workspace = {
+    resource_group_name = "security-grp"
+    location            = "UK South"
+  },
+  central-log-workspace = {
+    resource_group_name = "logging-grp"
+    location            = "UK South"
+  }
+}
