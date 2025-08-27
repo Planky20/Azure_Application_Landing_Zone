@@ -15,3 +15,8 @@ module "logging" {
   source                   = "./modules/monitoring/logging"
   log_analytics_workspaces = var.log_analytics_workspaces
 }
+
+module "azure-storage" {
+  source           = "./modules/storage/azurestorage"
+  storage_accounts = var.storage_accounts
+}

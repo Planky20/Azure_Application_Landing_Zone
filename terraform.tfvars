@@ -73,3 +73,22 @@ log_analytics_workspaces = {
     location            = "UK South"
   }
 }
+
+storage_accounts = {
+  securitystore = {
+    resource_group_name      = "security-grp"
+    location                 = "UK South"
+    account_tier             = "Standard"
+    account_replication_type = "LRS"
+    account_kind             = "StorageV2"
+    is_hns_enabled           = false
+  },
+  dataengstore = {
+    resource_group_name      = "storage-grp"
+    location                 = "North Europe"
+    account_tier             = "Standard"
+    account_replication_type = "LRS"
+    account_kind             = "StorageV2"
+    is_hns_enabled           = true
+  }
+}
