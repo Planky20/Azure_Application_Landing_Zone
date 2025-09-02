@@ -117,3 +117,10 @@ dbapp_environment = {
     }
   }
 }
+
+keyvaults = {
+  securityvault = {
+    location            = "UK South"
+    resource_group_name = "security-grp"
+  }
+}

@@ -25,3 +25,8 @@ module "databases" {
   source           = "./modules/storage/sqldatabase"
   database_details = local.database_details
 }
+
+module "security" {
+  source    = "./modules/security"
+  keyvaults = var.keyvaults
+}
