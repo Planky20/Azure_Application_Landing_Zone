@@ -92,3 +92,28 @@ storage_accounts = {
     is_hns_enabled           = true
   }
 }
+
+dbapp_environment = {
+  production = {
+    server = {
+      enggsqlserver = {
+        resource_group_name = "db-grp"
+        location            = "North Europe"
+        databases = {
+          datadb = {
+            sku = "S0"
+          }
+        }
+      }
+      centralsqlserver = {
+        resource_group_name = "db-grp"
+        location            = "North Europe"
+        databases = {
+          centraldb = {
+            sku = "S0"
+          }
+        }
+      }
+    }
+  }
+}

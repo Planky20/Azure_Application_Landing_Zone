@@ -53,3 +53,21 @@ variable "storage_accounts" {
     }
   ))
 }
+
+variable "dbapp_environment" {
+  type = map(object(
+    {
+      server = map(object(
+        {
+          resource_group_name = string
+          location            = string
+          databases = map(object(
+            {
+              sku = string
+            }
+          ))
+        }
+      ))
+    }
+  ))
+}

@@ -20,3 +20,8 @@ module "azure-storage" {
   source           = "./modules/storage/azurestorage"
   storage_accounts = var.storage_accounts
 }
+
+module "databases" {
+  source           = "./modules/storage/sqldatabase"
+  database_details = local.database_details
+}
