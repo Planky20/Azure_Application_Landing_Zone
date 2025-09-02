@@ -6,3 +6,13 @@ variable "keyvaults" {
     }
   ))
 }
+
+variable "policies" {
+  type = map(object(
+    {
+      resource_group  = string
+      parameter_name  = string
+      parameter_value = string
+    }
+  ))
+}

@@ -124,3 +124,11 @@ keyvaults = {
     resource_group_name = "security-grp"
   }
 }
+
+policies = {
+  "Allowed resource types" = { # This string will now be the KEY, and all below will be the VALUES for the MAP.
+    resource_group  = "network-grp"
+    parameter_name  = "listofResourceTypesAllowed"
+    parameter_value = "microsoft.compute/virtualmachines"
+  }
+}

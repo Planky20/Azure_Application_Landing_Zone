@@ -29,4 +29,5 @@ module "databases" {
 module "security" {
   source    = "./modules/security"
   keyvaults = var.keyvaults
+  policies  = var.policies
 }
